@@ -1,0 +1,111 @@
+/* resetting my css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: lightgoldenrodyellow;
+}
+
+/* My Navigation Bar */
+nav {
+  text-align:center;
+  height: auto;
+
+}
+ul{
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+
+ li {
+  padding: 5px;
+  float: right;
+ }
+
+/* Nav styling */
+.tabs a {
+  color: black;
+  transition: .03s;
+  font-size: 20px;
+}
+
+.tabs a:hover {
+  letter-spacing: 3px;
+  font-size: 25px;
+  color: #0bcbe5;
+}
+
+/* slideshow for attractions */
+body {
+  font-family: cursive;
+  padding: 5%;
+  text-align: center;
+  font-size: 50;
+}
+ 
+/* Styling the area of the slides */
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+ 
+/* Add animation to the slides */
+.slide-wrapper {
+   
+/* Calculate the total width on the
+  basis of number of slides */
+  width: calc(728px * 4);
+ 
+/* Specify the animation with the
+  duration and speed */
+  animation: slide 200s infinite;
+  animation-delay: 1s;
+  transition-duration: 1s;
+}
+ 
+/* Set the background color
+of the slides */
+.slide: {
+  background: lightgoldenrodyellow;
+}
+
+@keyframes slide {
+   
+/* this gives it an appearance of smoothly transitioning between each of the slides. */
+  25% {
+    margin-left: 0px;
+  }
+ 
+  50% {
+    margin-left: calc(-728px * 1);
+  }
+ 
+  75% {
+    margin-left: calc(-728px * 2);
+  }
+ 
+  100% {
+    margin-left: calc(-728px * 3);
+  }
+}
+
+/* Footer Image Resizing */
+img{
+  max-width: 30px;
+  max-height: 30px;
+}
